@@ -183,8 +183,9 @@ button  {
 
 #main-img {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 81px;
+    z-index: 1;
+    right: 5px;
 }
 
 #main-container-absolute {
@@ -269,7 +270,7 @@ button  {
 }
 
 #about-img {
-
+margin-bottom: 20px;
 }
 
 #advantages-block {
@@ -400,14 +401,13 @@ button  {
 }
 .services-img {
     position: relative;
-    height: 500px;
     text-align: center;
-    width: 285px;
+    width: 440px;
 }
 .services-img .services-heart {
     position: absolute;
-    bottom: 0;
-    left: 110px;
+    bottom: -19px;
+    left: 189px;
 }
 #quote-block {
     max-width: 1170px;

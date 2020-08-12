@@ -530,7 +530,6 @@ button  {
     padding-bottom: 140px;
 }
 #blog-container {
-    max-width: 1140px;
     padding-top: 45px;
 }
 .blog-item {
@@ -611,17 +610,17 @@ button  {
     font-size: 24px;
     line-height: 28px;
     color: #370E1D;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     position: relative;
 }
-.review-name img {
-    position: absolute;
-    top: 37px;
-    left: 265px;
-}
 .review-brunch {
+    margin: 0 auto;
     text-align: center;
     padding-bottom: 80px;
+}
+.review-brunch img {
+    margin: 0 auto;
+    text-align: center;
 }
 .review-text {
     width: 610px;
@@ -720,6 +719,7 @@ button  {
 }
 .accordion {
     position: relative;
+    background: #FFFFFF;
     cursor: pointer;
     outline: 0;
     border: 0;

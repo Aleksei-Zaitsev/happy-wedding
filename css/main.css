@@ -128,14 +128,20 @@ button {
     font-size: 14px;
     line-height: 19px;
     color: #8A5C56;
+    transition: 0.2s all ease;
 }
 
 .call-back-btn button:hover {
     box-shadow: 0 2px 8px rgba(55, 14, 29, 0.1);
     border-radius: 44px;
 }
-
+#main-bg   {
+    background: url("../images/main-bg.png");
+    background-position: top center;
+}
 #main-block {
+    opacity: 1;
+    background: transparent;
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
@@ -143,8 +149,9 @@ button {
 }
 
 #main-container {
+    background: rgba(248, 243, 240, 0.8);
+    border-radius: 5px;
     position: absolute;
-    background: rgba(255, 255, 255, 0.62);
     background-size: cover;
     margin-top: 142px;
     padding: 100px 74px 11px 100px;
@@ -207,7 +214,7 @@ button {
     border-radius: 5px;
     width: 596px;
     height: 374px;
-    z-index: -1;
+    z-index: 0;
 }
 
 #main-container-absolute-opacity {
@@ -354,9 +361,20 @@ button {
 }
 
 #services-block {
+    position: relative;
     max-width: 1170px;
     margin: 0 auto;
     padding-bottom: 140px;
+}
+#two-hearts {
+    position: absolute;
+    right: -40px;
+    bottom: 200px;
+}
+#almaz {
+    position: absolute;
+    left: -40px;
+    top: 200px;
 }
 
 #services-container {
@@ -368,6 +386,7 @@ button {
 
 .services-item {
     text-align: center;
+    transition: 0.2s all ease;
 }
 .services-item:hover {
     box-shadow: 0px 4px 20px rgba(55, 14, 29, 0.1);
@@ -430,6 +449,9 @@ button {
     text-align: center;
     width: 440px;
 }
+.services-img-main  {
+    width: 100%;
+}
 
 .services-img .services-heart {
     position: absolute;
@@ -446,6 +468,9 @@ button {
 
 #quote {
     margin: 0 auto;
+    padding: 40px 160px 100px 160px;
+    background: #F9F4F2;
+    border-radius: 6px;
     width: 835px;
     font-family: Aquarelle, sans-serif;
     font-size: 30px;
@@ -455,14 +480,25 @@ button {
 
 #quote-img {
     position: absolute;
-    bottom: 123px;
+    bottom: 219px;
     left: 265px;
 }
 
 #portfolio-block {
+    position: relative;
     padding-bottom: 190px;
     max-width: 1170px;
     margin: 0 auto;
+}
+#portfolio-hearts {
+    position: absolute;
+    top: 0;
+    left: -110px;
+}
+#bant {
+    position: absolute;
+    bottom: -10px;
+    right: -100px;
 }
 
 #portfolio-container {
@@ -474,6 +510,11 @@ button {
 .portfolio-item {
     position: relative;
     cursor: pointer;
+    padding: 5px 0;
+    transition: 0.2s all ease;
+}
+.portfolio-item:hover {
+    filter: drop-shadow(0px 4px 20px rgba(55, 14, 29, 0.1));
 }
 
 .portfolio-img {
@@ -488,7 +529,7 @@ button {
 }
 
 .portfolio-container-text {
-    background: #FFFFFF;
+    background: #F9F4F2;
     position: absolute;
     bottom: 20px;
     width: 350px;
@@ -520,7 +561,9 @@ button {
     margin: 0 auto;
     display: flex;
     width: 970px;
-    background: #FFFFFF;
+    background: #FDFCFC;
+    box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
+    border-radius: 5px;
     justify-content: center;
     position: relative;
     padding-bottom: 50px;
@@ -571,21 +614,27 @@ button {
 }
 
 #blog-block {
+    position: relative;
     max-width: 1170px;
     margin: 0 auto;
     padding-bottom: 140px;
 }
-
+#almaz-blog {
+    position: absolute;
+    top: 250px;
+    left: -90px;
+}
 #blog-container {
     padding-top: 45px;
 }
 
 .blog-item {
-    padding: 0 15px;
+    margin: 5px 15px;
     position: relative;
     width: 350px;
     height: 520px;
     outline: 0;
+    transition: 0.2s all ease;
 }
 .blog-item:hover {
     box-shadow: 0 4px 15px rgba(55, 14, 29, 0.16);
@@ -645,8 +694,20 @@ button {
     padding-bottom: 140px;
     position: relative;
 }
+#bokal {
+    position: absolute;
+    top: 185px;
+    left: 96px;
+}
+#review-heart {
+    position: absolute;
+    bottom: 193px;
+    right: -20px;
+}
 
 #review-container {
+    box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
+    border-radius: 10px;
     padding-top: 40px;
     width: 875px;
     margin: 0 auto;
@@ -690,12 +751,15 @@ button {
 }
 
 .review-text {
+    padding: 40px 85px;
+    margin-bottom: 40px;
+    background: #F9F4F2;
+    border-radius: 10px;
     width: 610px;
     font-family: Nunito SemiBold, sans-serif;
     font-size: 14px;
     line-height: 19px;
     color: #370E1D;
-    padding-bottom: 80px;
     height: 192px;
 }
 
@@ -713,8 +777,8 @@ button {
 
 .review-flowers {
     position: absolute;
-    left: 163px;
-    bottom: 130px;
+    left: 148px;
+    bottom: 136px;
 }
 
 #stock-block {
@@ -733,8 +797,10 @@ button {
 }
 
 #stock-text {
-    margin-left: 113px;
+    padding-left: 113px;
     width: 405px;
+    background: #fbfbfb;
+    padding-bottom: 3px;
 }
 
 #stock-title {
@@ -789,11 +855,21 @@ button {
 }
 
 #questions-block {
+    position: relative;
     max-width: 1170px;
     margin: 0 auto;
     padding-bottom: 140px;
 }
-
+#bells {
+    position: absolute;
+    left: -50px;
+    top: 0;
+}
+#flowers-question {
+    position: absolute;
+    right: -150px;
+    bottom: 150px;
+}
 #questions-container {
     padding-top: 50px;
 }
@@ -844,7 +920,7 @@ button {
 .accordion.is-open::after {
     color: #370E1D;
     transform: rotate(45deg);
-    background: white;
+    background: #F9F4F2;
 }
 
 #order-block {
@@ -854,17 +930,21 @@ button {
 }
 
 #order-content {
+    background: #F8F3F0;;
     position: relative;
+    box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
+    border-radius: 10px;
 }
 
 #order-content .block-title {
     text-align: left;
-    margin: 40px;
+    padding: 40px;
 }
 
 #order-inputs {
     display: flex;
     align-items: center;
+    margin-left: 40px;
     margin-bottom: 10px;
 }
 
@@ -886,6 +966,7 @@ button {
     font-size: 14px;
     line-height: 19px;
     color: #370E1D;
+    transition: 0.2s all ease;
 }
 
 .order-input input::placeholder {
@@ -900,20 +981,21 @@ button {
 }
 
 .error-type {
-    display: none;
+    display: block;
     font-family: Nunito SemiBold, sans-serif;
     font-size: 12px;
     line-height: 16px;
-    color: #EE5467;
+    color: transparent;
     position: absolute;
     bottom: -16px;
     left: 22px;
+    transition: 0.3s all ease;
 }
 
 #order-img {
     position: absolute;
     right: 78px;
-    bottom: -60px;
+    bottom: 22px;
 }
 
 #order-action button {
@@ -927,6 +1009,9 @@ button {
     outline: 0;
     border: 0;
     transition: all 0.3s ease-in-out;
+}
+#order-action {
+    padding: 0 0 40px 40px;
 }
 
 #order-action button:hover {

@@ -30,8 +30,63 @@ $(document).ready(function () {
             callBackBlock.css('display', 'none');
         }
     });
+    let nameCall = $('.call-back-name');
+    let phoneCall = $('.call-back-phone');
 
-    //Вопросы
+    var arrInputsCall = [nameCall, phoneCall];
+
+    $('.call-back-main-btn').click(function () {
+
+
+        if (nameCall.val() && phoneCall.val()) {
+            $.ajax({
+                type: 'post',
+                url: 'mail-call.php',
+                data: 'nameCall=' + nameCall.val() + '&phoneCall=' + phoneCall.val(),
+                success: () => {
+                    alert('заявка отправлена')
+                },
+                error: () => {
+                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                }
+            })
+            for (let i = 0; i < 2; i++) {
+                arrInputsCall[i].css('borderColor', '#C29892');
+                arrInputsCall[i].next().css('display','none');
+            }
+
+        } else {
+            for (let i = 0; i < 2; i++) {
+                if (!arrInputsCall[i].val()) {
+                    arrInputsCall[i].css('borderColor', '#E5467E');
+                    arrInputsCall[i].next().css('color','#E5467E');
+                }
+                if (arrInputsCall[i].val()) {
+                    arrInputsCall[i].css('borderColor', '#C29892');
+                    arrInputsCall[i].next().css('color','transparent');
+                }
+            }
+        }
+
+    });
+    for ( let x = 0; x < 2; x++) {
+        arrInputsCall[x].blur(function () {
+            if (!arrInputsCall[x].val()) {
+                arrInputsCall[x].css('borderColor', '#E5467E');
+                arrInputsCall[x].next().css('color','#E5467E');
+            } else {
+                arrInputsCall[x].css('borderColor', '#C29892');
+                arrInputsCall[x].next().css('color','transparent');
+            }
+        })
+        arrInputsCall[x].focus( function () {
+            arrInputsCall[x].css('borderColor', '#EFDFD8');
+            arrInputsCall[x].next().css('color','transparent');
+        })
+    };
+
+
+        //Вопросы
     let accordions = document.getElementsByClassName("accordion");
 
     for (let i = 0; i < accordions.length; i++) {
@@ -53,7 +108,60 @@ $(document).ready(function () {
     let fathersName = $('#client-fathers-name');
     let phone = $('#client-phone');
     let eMail = $('#client-e-mail');
-    let date = $('#client-date');
+    let marryDate = $('#client-marry-date');
 
-    let arr
+    var arrInputs = [name, surname, fathersName, phone, eMail, marryDate];
+
+    $('.order-main-btn').click(function () {
+
+
+        if (name.val() && surname.val() && fathersName.val() && phone.val() && eMail.val() && marryDate.val()) {
+            $.ajax({
+                type: 'post',
+                url: 'mail.php',
+                data: 'name=' + name.val() + '&surname=' + surname.val()
+                    + '&fathersName=' + fathersName.val() + '&phone=' + phone.val()
+                    + '&eMail=' + eMail.val() + '&date=' + marryDate.val(),
+                success: () => {
+                    alert('заявка отправлена')
+                },
+                error: () => {
+                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                }
+            })
+            for (let i = 0; i < 6; i++) {
+                arrInputs[i].css('borderColor', '#C29892');
+                arrInputs[i].next().css('color','none');
+            }
+
+        } else {
+            for (let i = 0; i < 6; i++) {
+                if (!arrInputs[i].val()) {
+                    arrInputs[i].css('borderColor', '#E5467E');
+                    arrInputs[i].next().css('color','#E5467E');
+                }
+                if (arrInputs[i].val()) {
+                    arrInputs[i].css('borderColor', '#C29892');
+                    arrInputs[i].next().css('color','transparent');
+                }
+            }
+        }
+
+    });
+    for ( let x = 0; x < 6; x++) {
+        arrInputs[x].blur(function () {
+            if (!arrInputs[x].val()) {
+                arrInputs[x].css('borderColor', '#E5467E');
+                arrInputs[x].next().css('color','#E5467E');
+            } else {
+                arrInputs[x].css('borderColor', '#C29892');
+                arrInputs[x].next().css('color','transparent');
+            }
+        })
+        arrInputs[x].focus( function () {
+            arrInputs[x].css('borderColor', '#EFDFD8');
+            arrInputs[x].next().css('color','transparent');
+        })
+    };
+
 });

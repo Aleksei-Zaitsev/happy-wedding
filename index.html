@@ -33,26 +33,29 @@
         </div>
     </div>
 </div>
-<div id="main-block">
-    <div id="main-container">
-        <div id="main-title">
-            Воплощаем мечты о счастье
+<div id="main-bg">
+    <div id="main-block">
+        <div id="main-container">
+            <div id="main-title">
+                Воплощаем мечты о счастье
+            </div>
+            <div id="main-text">
+                Приоритетом моей работы является воплощение Вашей мечты и счастливые лица молодоженов. Поведайте мне о
+                своих
+                мечтах и мы вместе воплотим их в жизнь.
+            </div>
+            <div id="main-action">
+                <button>
+                    Организовать свадьбу
+                </button>
+            </div>
         </div>
-        <div id="main-text">
-            Приоритетом моей работы является воплощение Вашей мечты и счастливые лица молодоженов. Поведайте мне о своих
-            мечтах и мы вместе воплотим их в жизнь.
-        </div>
-        <div id="main-action">
-            <button>
-                Организовать свадьбу
-            </button>
-        </div>
-    </div>
-    <div id="main-container-absolute">
+        <div id="main-container-absolute">
 
-    </div>
-    <div id="main-img">
-        <img src="images/main.png" alt="">
+        </div>
+        <div id="main-img">
+            <img src="images/main.png" alt="">
+        </div>
     </div>
 </div>
 <div id="about-block">
@@ -198,13 +201,19 @@
 
 </div>
 <div id="services-block">
+    <div id="two-hearts">
+        <img src="images/two-hearts.png" alt="">
+    </div>
+    <div id="almaz">
+        <img src="images/Almaz.png" alt="">
+    </div>
     <div class="block-title">
         Услуги
     </div>
     <div id="services-container">
         <div class="services-item">
             <div class="services-img">
-                <img src="images/services1.png" alt="">
+                <img class="services-img-main" src="images/services1.png" alt="">
                 <img class="services-heart" src="images/heart.png" alt="">
             </div>
             <div class="services-title">
@@ -222,7 +231,7 @@
         </div>
         <div class="services-item">
             <div class="services-img">
-                <img src="images/services2.png" alt="">
+                <img class="services-img-main" src="images/services2.png" alt="">
                 <img class="services-heart" src="images/heart.png" alt="">
             </div>
             <div class="services-title">
@@ -250,6 +259,12 @@
     </div>
 </div>
 <div id="portfolio-block">
+    <div id="portfolio-hearts">
+        <img src="images/portf-hearts.png" alt="">
+    </div>
+    <div id="bant">
+        <img src="images/bant-stock-design.png" alt="">
+    </div>
     <div class="block-title">
         Портфолио
     </div>
@@ -319,6 +334,9 @@
     <div class="block-title">
         Блог
     </div>
+    <div id="almaz-blog">
+        <img src="images/Almaz.png" alt="">
+    </div>
     <div id="blog-container">
         <div class="blog-item">
             <div class="blog-img">
@@ -386,12 +404,17 @@
     <div class="block-title">
         Отзывы
     </div>
+    <div id="bokal">
+        <img src="images/bokal.png" alt="">
+    </div>
+    <div id="review-heart">
+        <img src="images/heart-reviews.png" alt="">
+    </div>
     <div id="review-container">
         <div class="review-item">
             <img class="review-img" src="images/NS-review.png" alt="">
             <div class="review-name">
                 Наталья и Сергей
-
             </div>
             <div class="review-brunch"><img src="images/review-brunch.png" alt="">
             </div>
@@ -478,6 +501,12 @@
     </div>
 </div>
 <div id="questions-block">
+    <div id="bells">
+        <img src="images/bells.png" alt="">
+    </div>
+    <div id="flowers-question">
+        <img src="images/flowers-questions.png" alt="">
+    </div>
     <div class="block-title">
         Часто задаваемые вопросы
     </div>
@@ -534,8 +563,8 @@
                         Поле заполнено некорректно
                     </div>
                 </div>
-                <div class="order-input" id="client-surname">
-                    <input type="text" placeholder="Фамилия">
+                <div class="order-input">
+                    <input type="text" placeholder="Фамилия" id="client-surname">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
@@ -555,13 +584,13 @@
                     </div>
                 </div>
                 <div class="order-input">
-                    <input type="text" placeholder="E-mail" id="client-e-mail">
+                    <input type="email" placeholder="E-mail" id="client-e-mail">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
                 </div>
                 <div class="order-input">
-                    <input type="text" placeholder="Дата свадьбы" id="client-date">
+                    <input type="text" placeholder="Дата свадьбы" id="client-marry-date">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
@@ -569,7 +598,7 @@
             </div>
         </div>
         <div id="order-action">
-            <button>Организовать свадьбу</button>
+            <button class="order-main-btn">Организовать свадьбу</button>
         </div>
         <div id="order-img">
             <img src="images/order-img.png" alt="">
@@ -615,19 +644,19 @@
             Оставьте свой номер и мы перезвоним!
         </div>
         <div class="order-input">
-            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Имя" class="call-back-name">
             <div class="error-type">
                 Поле заполнено некорректно
             </div>
         </div>
         <div class="order-input">
-            <input type="text" placeholder="+7 (   ) ___ - __ - __">
+            <input type="text" placeholder="+7 (   ) ___ - __ - __" class="call-back-phone">
             <div class="error-type">
                 Поле заполнено некорректно
             </div>
         </div>
         <div id="call-back-action">
-            <button>Отправить заявку</button>
+            <button class="call-back-main-btn">Отправить заявку</button>
         </div>
         <div id="call-back-img">
             <img src="images/call-back-img.png" alt="">

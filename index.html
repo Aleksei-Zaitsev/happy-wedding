@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-<div id="header">
-    <div class="logo">
-        <div class="logo-title">
-            Happy Wedding
+<div id="header-block">
+    <div id="header">
+        <div class="logo">
+            <div class="logo-title">
+                Happy Wedding
+            </div>
+            <div class="logo-description">
+                ОРГАНИЗАТОР СВАДЕБ
+            </div>
         </div>
-        <div class="logo-description">
-            ОРГАНИЗАТОР СВАДЕБ
+        <div class="menu">
+            <a href="#">Обо мне</a>
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Блог</a>
+            <a href="#">Отзывы</a>
         </div>
-    </div>
-    <div class="menu">
-        <a href="#">Обо мне</a>
-        <a href="#">Услуги</a>
-        <a href="#">Портфолио</a>
-        <a href="#">Блог</a>
-        <a href="#">Отзывы</a>
-    </div>
-    <div class="main-number">
-        +7 (911) 262 20 09
-    </div>
-    <div class="call-back-btn">
-        <button>Заказать звонок</button>
+        <div class="main-number">
+            +7 (911) 262 20 09
+        </div>
+        <div class="call-back-btn">
+            <button>Заказать звонок</button>
+        </div>
     </div>
 </div>
 <div id="main-block">
@@ -392,7 +393,7 @@
                 Наталья и Сергей
 
             </div>
-            <div class="review-brunch"> <img src="images/review-brunch.png" alt="">
+            <div class="review-brunch"><img src="images/review-brunch.png" alt="">
             </div>
 
             <div class="review-text">
@@ -417,7 +418,7 @@
                 Камилла и Баграт
 
             </div>
-            <div class="review-brunch"> <img src="images/review-brunch.png" alt="">
+            <div class="review-brunch"><img src="images/review-brunch.png" alt="">
             </div>
 
             <div class="review-text review-text-KB">
@@ -439,7 +440,7 @@
                 Дарья и Иван
 
             </div>
-            <div class="review-brunch"> <img src="images/review-brunch.png" alt="">
+            <div class="review-brunch"><img src="images/review-brunch.png" alt="">
             </div>
 
             <div class="review-text review-text-DI">
@@ -528,19 +529,19 @@
         <div id="order-inputs">
             <div id="order-inputs-left">
                 <div class="order-input">
-                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Имя" id="client-name">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
                 </div>
-                <div class="order-input">
+                <div class="order-input" id="client-surname">
                     <input type="text" placeholder="Фамилия">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
                 </div>
                 <div class="order-input">
-                    <input type="text" placeholder="Отчество">
+                    <input type="text" placeholder="Отчество" id="client-fathers-name">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
@@ -548,19 +549,19 @@
             </div>
             <div id="order-inputs-right">
                 <div class="order-input">
-                    <input type="text" placeholder="+7 (   ) ___ - __ - __">
+                    <input type="text" placeholder="+7 (   ) ___ - __ - __" id="client-phone">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
                 </div>
                 <div class="order-input">
-                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="E-mail" id="client-e-mail">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
                 </div>
                 <div class="order-input">
-                    <input type="text" placeholder="Дата свадьбы">
+                    <input type="text" placeholder="Дата свадьбы" id="client-date">
                     <div class="error-type">
                         Поле заполнено некорректно
                     </div>
@@ -576,27 +577,61 @@
     </div>
 
 </div>
-<div id="footer">
-    <div class="logo">
-        <div class="logo-title">
-            Happy Wedding
+<div id="footer-block">
+    <div id="footer">
+        <div class="logo">
+            <div class="logo-title">
+                Happy Wedding
+            </div>
+            <div class="logo-description">
+                ОРГАНИЗАТОР СВАДЕБ
+            </div>
         </div>
-        <div class="logo-description">
-            ОРГАНИЗАТОР СВАДЕБ
+        <div class="menu">
+            <a href="#">Обо мне</a>
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Блог</a>
+            <a href="#">Отзывы</a>
+        </div>
+        <div class="main-number">
+            +7 (911) 262 20 09
+        </div>
+        <div class="call-back-btn">
+            <button>Заказать звонок</button>
         </div>
     </div>
-    <div class="menu">
-        <a href="#">Обо мне</a>
-        <a href="#">Услуги</a>
-        <a href="#">Портфолио</a>
-        <a href="#">Блог</a>
-        <a href="#">Отзывы</a>
-    </div>
-    <div class="main-number">
-        +7 (911) 262 20 09
-    </div>
-    <div class="call-back-btn">
-        <button>Заказать звонок</button>
+</div>
+<div id="call-back-block">
+    <div id="call-back-container">
+        <div id="call-back-close">
+            <svg id="call-back-close-cancel" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.806 22.8627L12.9435 12.0002L23.8046 1.13899C24.0646 0.878989 24.0646 0.456307 23.8046 0.19631C23.5446 -0.0636867 23.122 -0.0636867 22.862 0.19631L12.0008 11.0575L1.13963 0.194997C0.879629 -0.0649991 0.456947 -0.0649991 0.196951 0.194997C-0.063046 0.454994 -0.063046 0.877676 0.196951 1.13767L11.0581 12.0002L0.196951 22.8614C-0.063046 23.1214 -0.063046 23.5441 0.196951 23.8041C0.326261 23.9347 0.496947 24.0001 0.667632 24.0001C0.838317 24.0001 1.00894 23.9347 1.13963 23.8054L12.0008 12.9428L22.862 23.804C22.9927 23.9347 23.1633 24 23.334 24C23.5046 24 23.6753 23.9347 23.806 23.8053C24.066 23.5454 24.066 23.1227 23.806 22.8627Z"
+                      fill="#370E1D"/>
+            </svg>
+        </div>
+        <div id="call-back-title">
+            Оставьте свой номер и мы перезвоним!
+        </div>
+        <div class="order-input">
+            <input type="text" placeholder="Имя">
+            <div class="error-type">
+                Поле заполнено некорректно
+            </div>
+        </div>
+        <div class="order-input">
+            <input type="text" placeholder="+7 (   ) ___ - __ - __">
+            <div class="error-type">
+                Поле заполнено некорректно
+            </div>
+        </div>
+        <div id="call-back-action">
+            <button>Отправить заявку</button>
+        </div>
+        <div id="call-back-img">
+            <img src="images/call-back-img.png" alt="">
+        </div>
     </div>
 </div>
 

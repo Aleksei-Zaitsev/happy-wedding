@@ -1,0 +1,851 @@
+@media screen and (max-width: 1400px) {
+    #flowers-question {
+        right: 0;
+        bottom: 150px;
+        width: 120px;
+    }
+
+    #flowers-question img {
+        width: 100%;
+    }
+
+    #two-hearts {
+        right: 0;
+    }
+
+    #almaz {
+        left: 0;
+    }
+
+    #bant {
+        right: 0;
+    }
+
+    #bells {
+        left: 0;
+    }
+
+    #portfolio-hearts {
+        top: -40px;
+        left: 0;
+    }
+
+    #about-img-left {
+        left: -10px;
+    }
+
+    #about-img-butterflies {
+        right: 95px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+
+    .header-block, #main-bg, #about-block, #advantages-block, #services-block, #quote-block, #portfolio-block,
+    #stock-design-block, #blog-block, #review-block, #stock-block, #questions-block, #footer-block,
+    .order-block {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    #advantages-container {
+        width: 83%;
+        padding: 61px 35px;
+        margin: 0 auto;
+    }
+
+    .advantages-item {
+        margin-right: 5px;
+    }
+
+    .menu {
+        margin-right: 80px;
+    }
+
+    #main-img {
+        width: 580px;
+        right: 14px;
+        top: 233px;
+    }
+
+    #main-img img {
+        width: 100%;
+    }
+
+    #main-container-absolute {
+        bottom: 313px;
+        left: 89px;
+        width: 609px;
+        height: 320px;
+    }
+
+    #main-container {
+        padding: 46px 74px 11px 100px;
+        top: -84px;
+        left: 75px;
+    }
+
+    #quote {
+        width: 449px;
+    }
+
+    #review-heart {
+        right: -24px;
+    }
+
+    #flowers-question {
+        right: -20px;
+    }
+
+    #about-text-items {
+        margin-right: 15px;
+    }
+
+    #about-container {
+        width: 91%;
+        margin: 70px auto 0 auto;
+    }
+
+    #about-img-left {
+        left: -62px;
+    }
+
+    #about-img-butterflies {
+        right: 45px;
+    }
+
+    .services-item {
+        padding: 0 10px;
+    }
+
+    #services-container {
+        justify-content: center;
+    }
+
+    #quote-block {
+        width: 769px;
+    }
+
+    #quote-img {
+        position: absolute;
+        bottom: 219px;
+        left: 83px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #stock-block {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .menu {
+        width: 383px;
+        margin-right: 50px;
+
+    }
+    .logo {
+        margin-right: 44px;
+    }
+    .main-number {
+        font-family: Nunito Bold, sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 16px;
+    }
+    #stock-img {
+        position: absolute;
+        top: -12px;
+        right: -37px;
+    }
+
+    #stock-text {
+        padding-left: 10px;
+    }
+
+    #stock-box {
+        width: 918px;
+        right: -150px;
+    }
+
+    #stock-container {
+        width: 890px;
+    }
+
+    #review-container {
+        box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
+        border-radius: 10px;
+        padding-top: 40px;
+        width: 600px;
+    }
+
+    .review-text {
+        width: 423px;
+        height: 100%;
+        padding: 40px 15px
+    }
+
+    .review-flowers {
+        left: 57px;
+        width: 110px;
+    }
+
+    .review-flowers img {
+        width: 100%;
+    }
+
+    .blog-item {
+        margin: 5px 28px;
+    }
+
+    #portfolio-container {
+        padding-top: 50px;
+        width: 388px;
+        margin: 0 auto;
+    }
+
+    .portfolio-container-text {
+        left: 19px;
+    }
+
+    #blog-container {
+        padding-top: 45px;
+        width: 790px;
+        margin: 0 auto;
+    }
+    .portfolio-gallery-container {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .portfolio-gallery-container .portfolio-container-text {
+        bottom: -116px;
+        left: 228px;
+    }
+    #blog-container .slick-next {
+        right: -35px;
+    }
+    #review-block {
+        width: 715px;
+    }
+    #stock-design-text {
+        padding-top: 33px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .stock-design-img {
+        margin-right: 0;
+    }
+    #stock-design-box {
+        width: 600px;
+        height: 626px;
+        bottom: 127px;
+        right: -33px;
+    }
+    #bokal {
+        left: 6px;
+    }
+    #portfolio-hearts {
+        left: 121px;
+    }
+    #bant {
+        right: 100px;
+    }
+    #stock-design-description {
+        width: 440px;
+        margin: 20px auto 12px auto;
+    }
+    #stock-design-note {
+        margin-bottom: 20px;
+    }
+    #stock-design-container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+    #stock-design-block {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #advantages-container {
+        width: 698px;
+        padding: 61px 35px;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .advantages-item {
+        border: 1px solid #C1968F;
+        box-sizing: border-box;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .advantages-text {
+        margin:  0 auto;
+        padding-bottom: 10px;
+    }
+    .fith {
+        width: 250px;
+    }
+    .advantages-icon {
+        margin-left: 0;
+        padding-top: 10px;
+    }
+    #advantages-img {
+        position: absolute;
+        bottom: 101px;
+        right: 72px;
+    }
+    #stock-container {
+        width: 600px;
+        background: #fcfcfc;
+    }
+    #stock-text {
+        background: transparent;
+        position: relative;
+        padding-left: 10px;
+        z-index: 1;
+    }
+    #stock-img {
+        right: -36px;
+        z-index: 0;
+    }
+    #stock-women {
+        width: 174px;
+        position: absolute;
+        bottom: -56px;
+        left: -33px;
+    }
+    #stock-box {
+        width: 562px;
+        right: 62px;
+    }
+    #services-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #main-img {
+        width: 580px;
+        right: 14px;
+        top: 266px;
+    }
+    #main-container {
+        padding: 46px 74px 11px 100px;
+        top: -133px;
+        left: 100px;
+    }
+    #main-container-absolute {
+        bottom: 362px;
+        left: 90px;
+        width: 609px;
+        height: 315px;
+    }
+    .order-img {
+        width: 130px;
+        position: absolute;
+        left: -15px;
+        bottom: -36px;
+    }
+    .order-img img {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 960px) {
+    .burger {
+        display: block;
+    }
+    .header .menu {
+        display: none;
+    }
+    .header .main-number {
+        display: none;
+    }
+    .header .call-back-btn {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    #footer .logo {
+        width: 100%;
+        margin-right: 44px;
+        padding-bottom: 30px;
+    }
+    #footer .main-number {
+        width: 53%;
+        padding-top:30px;
+        margin-right: 0;
+        text-align: center;
+    }
+    #footer .menu {
+        margin-right: 0;
+    }
+    #footer .call-back-btn {
+        width: 45%;
+        padding-top: 30px;
+        text-align: center;
+    }
+    #footer {
+        flex-wrap: wrap;
+    }
+
+    #about-img {
+        width: 220px;
+        margin-bottom: 20px;
+    }
+    #about-img img {
+        width: 100%;
+    }
+    #quote {
+        width: 354px;
+    }
+    #quote-img {
+        left: 61px;
+    }
+    #flowers-question {
+        bottom: 314px;
+    }
+}
+@media screen and (max-width: 850px) {
+    #blog-container {
+        padding-top: 45px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .blog-item {
+        margin: 5px 40px;
+        width: 350px;
+    }
+    #blog-container .slick-next {
+        right: -25px;
+    }
+    #review-container {
+        box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
+        border-radius: 10px;
+        padding-top: 40px;
+        width: 400px;
+    }
+    .review-text {
+        width: 340px;
+    }
+    .review-flowers {
+        left: 158px;
+        width: 110px;
+    }
+    #stock-box {
+        width: 378px;
+        right: 11px;
+        height: 350px;
+        bottom: 129px;
+    }
+    #stock-container {
+        width: 409px;
+        overflow: hidden;
+        background: #fcfcfc;
+    }
+    #stock-title {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #stock-description {
+        width: 79%;
+        margin: 0 auto;
+        padding: 5px 0 94px 0;
+    }
+    #stock-img {
+        right: -231px;
+        z-index: 0;
+        top: -44px;
+    }
+    #stock-women {
+        width: 174px;
+        position: absolute;
+        bottom: -56px;
+        left: -33px;
+    }
+    #main-container {
+        position: static;
+        text-align: center;
+        background: transparent;
+        width: 427px;
+        margin: 0 auto;
+    }
+    #main-action {
+        position: relative;
+    }
+    #main-container-absolute {
+        display: none;
+    }
+    #main-img {
+        display: none;
+    }
+    #main-text {
+        width: 374px;
+        margin: 310px auto 30px auto;
+    }
+    #main-img-adaptive {
+        display: block;
+        position: absolute;
+        top: -410px;
+        left: 21px;
+        width: 400px;
+    }
+    #main-img-adaptive img {
+        width: 100%;
+    }
+    #main-title {
+        width: 260px;
+        margin: 0 auto;
+    }
+    #about-img {
+        width: 220px;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 157px;
+    }
+    .about-text-item:first-child {
+        margin-bottom: 243px;
+    }
+    #about-img-left {
+        display: none;
+    }
+    #about-img-right {
+        display: block;
+        position: absolute;
+        right: 47px;
+        opacity: 0.6;
+        transform: scale(-1,1);
+        top: 0;
+        width: 170px;
+    }
+    #about-img-right img {
+        width: 100%;
+    }
+    .portfolio-gallery-container {
+        width: 340px;
+        margin: 0 auto;
+    }
+    .portfolio-gallery-container .portfolio-container-text {
+        bottom: -111px;
+        left: -4px;
+    }
+    #stock-block {
+        width: 458px;
+        margin: 0 auto;
+    }
+    #review-block {
+        width: 511px;
+    }
+}
+@media screen and (max-width: 810px) {
+    #flowers-question {
+        display: none;
+    }
+    .accordion {
+        width: 99%;
+    }
+    #stock-design-description {
+        width: 333px;
+    }
+    .stock-design-img:last-child{
+        display: none;
+    }
+    #stock-design-container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 389px;
+    }
+    #stock-design-box {
+        width: 389px;
+        right: 90px;
+    }
+    #quote {
+        width: 99%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #quote-img {
+        position: absolute;
+        bottom: 229px;
+        left: 84px;
+        width: 350px;
+    }
+    #quote-img img {
+        width: 100%;
+    }
+    #quote-block {
+        width: 100%;
+    }
+    #advantages-container {
+        width: 275px;
+        padding: 0 0;
+        margin: 0 auto;
+        border: 0;
+    }
+    .advantages-item {
+        border: 1px solid #C1968F;
+        box-sizing: border-box;
+        border-radius: 5px;
+        text-align: center;
+        padding: 2px;
+        margin: 10px 0;
+    }
+    #advantages-img {
+        bottom: -17px;
+        right: 220px;
+        width: 93px;
+    }
+    #advantages-img img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .accordion {
+        width: 400px;
+        line-height: 34px;
+    }
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 15px;
+        width: 290px;
+    }
+    .accordion::after {
+        top: 4px;
+        right: -30px;
+    }
+    #stock-design-block {
+        width: 278px;
+    }
+    #stock-design-container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 278px;
+    }
+    #stock-design-box {
+        width: 278px;
+        right: -29px;
+        height: 678px;
+    }
+    #stock-design-description {
+        width: 278px;
+
+    }
+    .accordion {
+        font-size: 18px;
+    }
+    .order-inputs {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .order-action {
+        padding: 0 0 40px 0;
+    }
+    .order-inputs-right {
+        margin-left: 0;
+    }
+    .order-content {
+        background: #F8F3F0;
+        position: relative;
+        box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .order-content .block-title {
+        text-align: center;
+        padding: 40px;
+    }
+    .services-img {
+        position: relative;
+        text-align: center;
+        width: 290px;
+    }
+    .services-img .services-heart {
+        position: absolute;
+        bottom: -19px;
+        left: 114px;
+    }
+    #main-container {
+         padding: 46px 0 11px 0;
+    }
+    #quote-block {
+        width: 100%;
+        background: #f9f4f2;
+        padding-bottom: 10px;
+    }
+    #quote {
+        width: 99%;
+        padding: 40px 0 6px 0;
+    }
+    #quote-img {
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #portfolio-block {
+        margin-top: 130px;
+    }
+
+}
+@media screen and (max-width: 530px) {
+    #questions-block #questions-container button {
+        width: 274px !important;
+    }
+    .accordion {
+        width: 274px !important;
+    }
+    .accordion::after {
+        content: "+";
+        top: 33px;
+        right: -52px;
+    }
+    #main-container {
+        position: static;
+        text-align: center;
+        background: transparent;
+        width: 300px;
+        margin: 0 auto;
+    }
+    #stock-block {
+        width: 290px;
+    }
+    #stock-img {
+        display: none;
+    }
+    #stock-container {
+        width: 290px;
+        overflow: hidden;
+        background: url("../images/stock-face-adaptive.png");
+        background-size: cover;
+    }
+    #stock-text {
+        padding-left: 0;
+        width: 290px;
+        background: transparent;
+        padding-bottom: 3px;
+    }
+    #stock-title {
+        margin: 0 auto;
+        width: 105px;
+        padding-top: 246px;
+    }
+    #stock-box {
+        width: 290px;
+        right: -34px;
+        height: 531px;
+        bottom: 129px;
+    }
+
+    #main-img-adaptive {
+        display: block;
+        position: absolute;
+        top: -368px;
+        left: 21px;
+        width: 280px;
+    }
+
+    #main-text {
+        width: 254px;
+        margin: 215px auto 30px auto;
+    }
+
+    #review-block {
+        width: 289px;
+    }
+
+    #review-container {
+        width: 289px;
+    }
+
+    .review-text {
+        width: 250px;
+        background: transparent;
+    }
+
+    .review-flowers {
+        left: 21px;
+    }
+
+    #review-heart {
+        right: -98px;
+    }
+
+    #bokal {
+        left: -27px;
+    }
+
+    .blog-item {
+        margin: 5px 40px;
+        width: 290px;
+    }
+
+    .blog-img {
+        width: 290px;
+    }
+
+    .blog-img img {
+        width: 100%;
+    }
+
+    .blog-title {
+        width: 290px;
+
+
+    }
+
+    .blog-description {
+        width: 270px;
+    }
+
+    #blog-container {
+        padding-top: 45px;
+        width: 290px;
+    }
+
+    #portfolio-container {
+        width: 300px;
+    }
+    .portfolio-container-text {
+        background: #F9F4F2;
+        position: absolute;
+        bottom: 20px;
+        width: 261px;
+    }
+    #about-img-right {
+        display: block;
+        position: absolute;
+        right: 47px;
+        opacity: 0.4;
+        transform: scale(-1,1);
+        top: 0;
+        width: 106px;
+    }
+
+    .portfolio-gallery-container {
+        width: 290px;
+        margin: 0 auto;
+    }
+.gallery-img {
+    margin: 0 50px;
+    outline: 0;
+    width: 280px;
+    height: 360px;
+}
+    .portfolio-gallery-container  .container-text {
+        bottom: -111px;
+        left: 14px;
+    }
+}

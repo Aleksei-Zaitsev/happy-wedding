@@ -1,13 +1,59 @@
 $(document).ready(function () {
-
+    let portImgCont = $('#portfolio-container');
     //карусели
+    portImgCont.slick({
+        variableWidth: true,
+        centerMode: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true
+                }
+            }
+        ]
+    });
+
     $('#blog-container').slick({
         variableWidth: true,
         centerMode: true,
         infinite: true,
+        speed: 300,
         arrows: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    variableWidth: false,
+                    centerPadding: "0px",
+                    slidesToShow: 2,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 851,
+                settings: {
+                    variableWidth: true,
+                    centerPadding: "0px",
+                    slidesToShow: 1,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
     $('#review-container').slick({
         variableWidth: true,
@@ -15,14 +61,114 @@ $(document).ready(function () {
         infinite: true,
         arrows: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        responsive: [
+            {
+                breakpoint: 400,
+                settings: {
+                    arrows: false,
+                }
+            }
+    ]
+    });
+    let portGalSlick = $('.portfolio-gallery');
+    portGalSlick.slick({
+        variableWidth: true,
+        centerMode: true,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    variableWidth: false,
+                    centerPadding: "0px",
+                    slidesToShow: 2,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 861,
+                settings: {
+                    variableWidth: true,
+                    centerPadding: "0px",
+                    slidesToShow: 1,
+                    arrows: true,
+                }
+            }
+        ]
+    });
+
+    //Галлерея портфолио
+
+    let portImg = $('.portfolio-item');
+    let portCont = $('.portfolio-gallery-container');
+    let portBtnBack = $('#portfolio-btn-back button');
+    let natSerPort = $('#nat-ser-port');
+    let darIvaPort = $('#dar-iva-port');
+    let kamBogPort = $('#kam-bog-port');
+    let natSerGal = $('#natalia-sergei');
+    let darIvaGal = $('#daria-ivan');
+    let kamBogGal = $('#kamilla-bogdat');
+
+    natSerPort.click(() => {
+       portImg.hide();
+       natSerGal.show()
+        portBtnBack.show();
+        portImgCont.hide();
+        portGalSlick.slick('refresh');
+    });
+    darIvaPort.click(() => {
+       portImg.hide();
+        darIvaGal.show()
+        portBtnBack.show();
+        portImgCont.hide();
+        portGalSlick.slick('refresh');
+    });
+    kamBogPort.click(() => {
+       portImg.hide();
+        portImgCont.hide();
+        kamBogGal.show()
+        portBtnBack.show();
+        portImgCont.hide();
+        portGalSlick.slick('refresh');
+    });
+
+    portBtnBack.click(() => {
+        portCont.hide();
+        portImg.show();
+        portBtnBack.hide();
+        portImgCont.show();
+        portImgCont.slick('refresh');
+        $('html, body').animate({
+            scrollTop: $("#portfolio-block").offset().top
+        }, 0);
+    });
+
+    let callBackBtn = $('.call-back-btn button');
+    let callBackBlock = $('#call-back-block');
+    //бургер меню
+
+    let adaptivBlock = $('.adaptive-menu-block');
+    let burger = $('.burger');
+    burger.click(function () {
+        adaptivBlock.css('display', 'flex');
+    });
+    $('.menu-items a').click(function () {
+        adaptivBlock.css('display', 'none');
+    });
+    $('#adaptive-menu-close-cancel, #adaptive-block').click((e) => {
+        if (e.target.id === 'adaptive-menu-close-cancel' || e.target.id === 'adaptive-block') {
+            adaptivBlock.css('display', 'none');
+        }
     });
 
     //попап обратного звонка
-    let callBackBtn = $('.call-back-btn button');
-    let callBackBlock = $('#call-back-block');
+
 
     callBackBtn.click(function () {
+        adaptivBlock.css('display', 'none');
         callBackBlock.css('display', 'flex');
     });
     $('#call-back-close-cancel, #call-back-block').click((e) => {

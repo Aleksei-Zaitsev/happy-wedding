@@ -701,7 +701,7 @@
 @media screen and (max-width: 680px) {
     .accordion {
         width: 400px;
-        line-height: 34px;
+        line-height: 51px;
     }
 
     .accordion-content {
@@ -712,7 +712,7 @@
     }
 
     .accordion::after {
-        top: 4px;
+        top: 16px;
         right: -30px;
     }
 
@@ -823,14 +823,15 @@
 @media screen and (max-width: 530px) {
 
     .accordion {
-        width: 260px !important;
+        width: 75%;
         padding: 15px 0 0 0;
         font-size: 17px;
+        line-height: 41px;
     }
 
     .accordion::after {
         content: "+";
-        top: 18px;
+        top: 21px;
         right: -52px;
     }
 
@@ -1043,7 +1044,7 @@
         right: -60px;
     }
     .accordion {
-        width: 222px !important;
+        width: 78%;
         padding: 15px 0 15px 0;
         font-size: 17px;
     }

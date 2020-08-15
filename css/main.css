@@ -1082,7 +1082,8 @@ button {
 
 #call-back-container {
     position: relative;
-    width: 726px;
+    max-width: 726px;
+    margin: 10px;
     background: #F8F3F0;
     box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
     border-radius: 10px;

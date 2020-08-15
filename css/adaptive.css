@@ -139,20 +139,24 @@
         width: 800px;
         margin: 0 auto;
     }
+
     .menu {
         width: 383px;
         margin-right: 50px;
 
     }
+
     .logo {
         margin-right: 44px;
     }
+
     .main-number {
         font-family: Nunito Bold, sans-serif;
         font-size: 14px;
         line-height: 19px;
         margin-right: 16px;
     }
+
     #stock-img {
         position: absolute;
         top: -12px;
@@ -213,56 +217,70 @@
         width: 790px;
         margin: 0 auto;
     }
+
     .portfolio-gallery-container {
         width: 720px;
         margin: 0 auto;
     }
+
     .portfolio-gallery-container .portfolio-container-text {
         bottom: -116px;
         left: 228px;
     }
+
     #blog-container .slick-next {
         right: -35px;
     }
+
     #review-block {
         width: 715px;
     }
+
     #stock-design-text {
         padding-top: 33px;
         width: 100%;
         margin-right: 0;
     }
+
     .stock-design-img {
         margin-right: 0;
     }
+
     #stock-design-box {
         width: 600px;
         height: 626px;
         bottom: 127px;
         right: -33px;
     }
+
     #bokal {
         left: 6px;
     }
+
     #portfolio-hearts {
         left: 121px;
     }
+
     #bant {
         right: 100px;
     }
+
     #stock-design-description {
         width: 440px;
         margin: 20px auto 12px auto;
     }
+
     #stock-design-note {
         margin-bottom: 20px;
     }
+
     #stock-design-container {
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         width: 600px;
     }
+
     #stock-design-block {
         width: 600px;
     }
@@ -284,114 +302,139 @@
         padding: 10px;
         margin: 10px;
     }
+
     .advantages-text {
-        margin:  0 auto;
+        margin: 0 auto;
         padding-bottom: 10px;
     }
+
     .fith {
         width: 250px;
     }
+
     .advantages-icon {
         margin-left: 0;
         padding-top: 10px;
     }
+
     #advantages-img {
         position: absolute;
         bottom: 101px;
         right: 72px;
     }
+
     #stock-container {
         width: 600px;
         background: #fcfcfc;
     }
+
     #stock-text {
         background: transparent;
         position: relative;
         padding-left: 10px;
         z-index: 1;
     }
+
     #stock-img {
         right: -36px;
         z-index: 0;
     }
+
     #stock-women {
         width: 174px;
         position: absolute;
         bottom: -56px;
         left: -33px;
     }
+
     #stock-box {
         width: 562px;
         right: 62px;
     }
+
     #services-container {
         justify-content: center;
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 1050px) {
     #main-img {
         width: 580px;
         right: 14px;
         top: 266px;
     }
+
     #main-container {
         padding: 46px 74px 11px 100px;
         top: -133px;
         left: 100px;
     }
+
     #main-container-absolute {
         bottom: 362px;
         left: 90px;
         width: 609px;
         height: 315px;
     }
+
     .order-img {
         width: 130px;
         position: absolute;
         left: -15px;
         bottom: -36px;
     }
+
     .order-img img {
         width: 100%;
     }
 
 }
+
 @media screen and (max-width: 960px) {
     .burger {
         display: block;
     }
+
     .header .menu {
         display: none;
     }
+
     .header .main-number {
         display: none;
     }
+
     .header .call-back-btn {
         display: none;
     }
+
     .header {
         justify-content: space-between;
     }
+
     #footer .logo {
         width: 100%;
-        margin-right: 44px;
+        margin-right: 0;
         padding-bottom: 30px;
     }
+
     #footer .main-number {
         width: 53%;
-        padding-top:30px;
+        padding-top: 30px;
         margin-right: 0;
         text-align: center;
     }
+
     #footer .menu {
         margin-right: 0;
     }
+
     #footer .call-back-btn {
         width: 45%;
         padding-top: 30px;
         text-align: center;
     }
+
     #footer {
         flex-wrap: wrap;
     }
@@ -400,76 +443,93 @@
         width: 220px;
         margin-bottom: 20px;
     }
+
     #about-img img {
         width: 100%;
     }
+
     #quote {
         width: 354px;
     }
+
     #quote-img {
         left: 61px;
     }
+
     #flowers-question {
         bottom: 314px;
     }
 }
+
 @media screen and (max-width: 850px) {
     #blog-container {
         padding-top: 45px;
         width: 400px;
         margin: 0 auto;
     }
+
     .blog-item {
         margin: 5px 40px;
         width: 350px;
     }
+
     #blog-container .slick-next {
         right: -25px;
     }
+
     #review-container {
         box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
         border-radius: 10px;
         padding-top: 40px;
         width: 400px;
     }
+
     .review-text {
         width: 340px;
     }
+
     .review-flowers {
         left: 158px;
         width: 110px;
     }
+
     #stock-box {
         width: 378px;
         right: 11px;
         height: 350px;
         bottom: 129px;
     }
+
     #stock-container {
         width: 409px;
         overflow: hidden;
         background: #fcfcfc;
     }
+
     #stock-title {
         margin: 0 auto;
         width: 100%;
     }
+
     #stock-description {
         width: 79%;
         margin: 0 auto;
         padding: 5px 0 94px 0;
     }
+
     #stock-img {
         right: -231px;
         z-index: 0;
         top: -44px;
     }
+
     #stock-women {
         width: 174px;
         position: absolute;
         bottom: -56px;
         left: -33px;
     }
+
     #main-container {
         position: static;
         text-align: center;
@@ -477,19 +537,24 @@
         width: 427px;
         margin: 0 auto;
     }
+
     #main-action {
         position: relative;
     }
+
     #main-container-absolute {
         display: none;
     }
+
     #main-img {
         display: none;
     }
+
     #main-text {
         width: 374px;
         margin: 310px auto 30px auto;
     }
+
     #main-img-adaptive {
         display: block;
         position: absolute;
@@ -497,99 +562,122 @@
         left: 21px;
         width: 400px;
     }
+
     #main-img-adaptive img {
         width: 100%;
     }
+
     #main-title {
         width: 260px;
         margin: 0 auto;
     }
+
     #about-img {
         width: 220px;
         margin-bottom: 20px;
         position: absolute;
         top: 157px;
     }
+
     .about-text-item:first-child {
         margin-bottom: 243px;
     }
+
     #about-img-left {
         display: none;
     }
+
     #about-img-right {
         display: block;
         position: absolute;
         right: 47px;
         opacity: 0.6;
-        transform: scale(-1,1);
+        transform: scale(-1, 1);
         top: 0;
         width: 170px;
     }
+
     #about-img-right img {
         width: 100%;
     }
+
     .portfolio-gallery-container {
         width: 340px;
         margin: 0 auto;
     }
+
     .portfolio-gallery-container .portfolio-container-text {
         bottom: -111px;
         left: -4px;
     }
+
     #stock-block {
         width: 458px;
         margin: 0 auto;
     }
+
     #review-block {
         width: 511px;
     }
 }
+
 @media screen and (max-width: 810px) {
     #flowers-question {
         display: none;
     }
+
     .accordion {
         width: 99%;
     }
+
     #stock-design-description {
         width: 333px;
     }
-    .stock-design-img:last-child{
+
+    .stock-design-img:last-child {
         display: none;
     }
+
     #stock-design-container {
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         width: 389px;
     }
+
     #stock-design-box {
         width: 389px;
         right: 90px;
     }
+
     #quote {
         width: 99%;
         padding-right: 0;
         padding-left: 0;
     }
+
     #quote-img {
         position: absolute;
         bottom: 229px;
         left: 84px;
         width: 350px;
     }
+
     #quote-img img {
         width: 100%;
     }
+
     #quote-block {
         width: 100%;
     }
+
     #advantages-container {
         width: 275px;
         padding: 0 0;
         margin: 0 auto;
         border: 0;
     }
+
     .advantages-item {
         border: 1px solid #C1968F;
         box-sizing: border-box;
@@ -598,61 +686,75 @@
         padding: 2px;
         margin: 10px 0;
     }
+
     #advantages-img {
         bottom: -17px;
         right: 220px;
         width: 93px;
     }
+
     #advantages-img img {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 680px) {
     .accordion {
         width: 400px;
         line-height: 34px;
     }
+
     .accordion-content {
         max-height: 0;
         overflow: hidden;
         padding: 0 15px;
         width: 290px;
     }
+
     .accordion::after {
         top: 4px;
         right: -30px;
     }
+
     #stock-design-block {
         width: 278px;
     }
+
     #stock-design-container {
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         width: 278px;
     }
+
     #stock-design-box {
         width: 278px;
         right: -29px;
         height: 678px;
     }
+
     #stock-design-description {
         width: 278px;
 
     }
+
     .accordion {
         font-size: 18px;
     }
+
     .order-inputs {
         flex-direction: column;
         margin-left: 0;
     }
+
     .order-action {
         padding: 0 0 40px 0;
     }
+
     .order-inputs-right {
         margin-left: 0;
     }
+
     .order-content {
         background: #F8F3F0;
         position: relative;
@@ -667,51 +769,71 @@
         text-align: center;
         padding: 40px;
     }
+
     .services-img {
         position: relative;
         text-align: center;
         width: 290px;
     }
+
     .services-img .services-heart {
         position: absolute;
         bottom: -19px;
         left: 114px;
     }
+
     #main-container {
-         padding: 46px 0 11px 0;
+        padding: 46px 0 11px 0;
     }
+
     #quote-block {
         width: 100%;
         background: #f9f4f2;
         padding-bottom: 10px;
     }
+
     #quote {
         width: 99%;
         padding: 40px 0 6px 0;
     }
+
     #quote-img {
         width: 100%;
         position: static;
         margin: 0 auto;
         text-align: center;
     }
+
     #portfolio-block {
         margin-top: 130px;
     }
 
 }
+@media screen and (max-width: 600px) {
+    #call-back-img {
+        position: absolute;
+        top: 80px;
+        right: 185px;
+        width: 130px;
+    }
+    #call-back-img img {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 530px) {
-    #questions-block #questions-container button {
-        width: 274px !important;
-    }
+
     .accordion {
-        width: 274px !important;
+        width: 260px !important;
+        padding: 15px 0 0 0;
+        font-size: 17px;
     }
+
     .accordion::after {
         content: "+";
-        top: 33px;
+        top: 18px;
         right: -52px;
     }
+
     #main-container {
         position: static;
         text-align: center;
@@ -719,32 +841,43 @@
         width: 300px;
         margin: 0 auto;
     }
+
     #stock-block {
         width: 290px;
     }
+
     #stock-img {
         display: none;
     }
+
     #stock-container {
-        width: 290px;
+        width: 258px;
         overflow: hidden;
         background: url("../images/stock-face-adaptive.png");
         background-size: cover;
     }
+
+    .slick-next:before, .slick-prev:before {
+        display: none;
+    }
+
+
     #stock-text {
         padding-left: 0;
-        width: 290px;
+        width: 233px;
         background: transparent;
         padding-bottom: 3px;
     }
+
     #stock-title {
         margin: 0 auto;
         width: 105px;
         padding-top: 246px;
     }
+
     #stock-box {
-        width: 290px;
-        right: -34px;
+        width: 282px;
+        right: -3px;
         height: 531px;
         bottom: 129px;
     }
@@ -763,13 +896,14 @@
     }
 
     #review-block {
-        width: 289px;
+        width: 100%;
     }
-
     #review-container {
-        width: 289px;
+        width: 280px;
     }
-
+    .review-brunch {
+        padding-bottom: 12px;
+    }
     .review-text {
         width: 250px;
         background: transparent;
@@ -816,20 +950,22 @@
     }
 
     #portfolio-container {
-        width: 300px;
+        width: 280px;
     }
+
     .portfolio-container-text {
         background: #F9F4F2;
         position: absolute;
         bottom: 20px;
-        width: 261px;
+        width: 241px;
     }
+
     #about-img-right {
         display: block;
         position: absolute;
         right: 47px;
         opacity: 0.4;
-        transform: scale(-1,1);
+        transform: scale(-1, 1);
         top: 0;
         width: 106px;
     }
@@ -838,14 +974,102 @@
         width: 290px;
         margin: 0 auto;
     }
-.gallery-img {
-    margin: 0 50px;
-    outline: 0;
-    width: 280px;
-    height: 360px;
-}
-    .portfolio-gallery-container  .container-text {
+
+    .gallery-img {
+        margin: 0 50px;
+        outline: 0;
+        width: 280px;
+        height: 360px;
+    }
+
+    .portfolio-gallery-container .container-text {
         bottom: -111px;
         left: 14px;
     }
+    #stock-design-block {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #stock-design-container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 260px;
+    }
+    #stock-design-box {
+        width: 255px;
+        right: -11px;
+    }
+    #stock-design-description {
+        width: 219px;
+    }
+    #stock-design-note {
+        width: 237px;
+    }
+    .advantages-title {
+        width: 251px;
+        margin: 20px auto 14px auto;
+    }
+    .about-text-item {
+        width: 246px;
+    }
+    #review-heart {
+        display: none;
+    }
+    .portfolio-gallery-container .portfolio-container-text {
+        bottom: -111px;
+        left: 14px;
+    }
+    #portfolio-hearts {
+        left: 19px;
+    }
+}
+@media screen and (max-width: 430px) {
+    #footer .menu {
+        flex-direction: column;
+    }
+    #footer .menu a {
+        margin: 15px 0;
+    }
+    #footer .main-number {
+        width: 61%
+    }
+    #footer .call-back-btn {
+        width: 56%
+    }
+    .accordion::after {
+        content: "+";
+        top: 28px;
+        right: -60px;
+    }
+    .accordion {
+        width: 222px !important;
+        padding: 15px 0 15px 0;
+        font-size: 17px;
+    }
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        width: 258px;
+    }
+    .about-text-item:first-child {
+        margin-bottom: 277px;
+    }
+    #about-img {
+        top: 195px;
+        margin-left: 15px;
+    }
+    #about-img-right {
+        right: -19px;
+    }
+    #about-img-butterflies {
+        right: -31px;
+        top: -244px;
+    }
+    #call-back-title {
+        font-family: Aquarelle, sans-serif;
+        font-size: 30px;
+    }
+
 }

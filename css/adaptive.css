@@ -580,7 +580,7 @@
     }
 
     .review-flowers {
-        left: 158px;
+        left: 55px;
         width: 110px;
     }
 
@@ -1044,7 +1044,21 @@
     }
 
     .review-flowers {
-        left: 21px;
+        display: none;
+    }
+    .review-item {
+        position: relative;
+        height: 920px;
+    }
+    .flowers-item {
+        display: block;
+        position: absolute;
+        bottom: 2px;
+        left: 131px;
+        width: 130px;
+    }
+    .flowers-item img {
+        width: 100%;
     }
 
     #review-heart {
@@ -1052,7 +1066,7 @@
     }
 
     #bokal {
-        left: -27px;
+        left: 0px;
     }
 
     .blog-item {

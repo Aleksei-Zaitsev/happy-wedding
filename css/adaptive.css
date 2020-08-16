@@ -43,7 +43,7 @@
 
     .header-block, #main-bg, #about-block, #advantages-block, #services-block, #quote-block, #portfolio-block,
     #stock-design-block, #blog-block, #review-block, #stock-block, #questions-block, #footer-block,
-    .order-block {
+    .order-block, .header-article-block, .main-block, .article-content, .footer-block {
         padding-left: 20px;
         padding-right: 20px;
         box-sizing: border-box;
@@ -95,7 +95,7 @@
     }
 
     #flowers-question {
-        right: -20px;
+        right: 0;
     }
 
     #about-text-items {
@@ -116,7 +116,7 @@
     }
 
     .services-item {
-        padding: 0 10px;
+        padding: 22px 10px;
     }
 
     #services-container {
@@ -287,11 +287,38 @@
 }
 
 @media screen and (max-width: 1150px) {
+
+    .main-img {
+        position: relative;
+        z-index: 1;
+        margin-right: 25px;
+        width: 325px;
+        height: 203px;
+    }
+
+    .main-img img {
+        width: 100%;
+        height: 100%;
+    }
+
     #advantages-container {
         width: 698px;
         padding: 61px 35px;
         margin: 0 auto;
         border: 0;
+    }
+
+    .main-box-absolute {
+        right: 18px;
+        top: 191px;
+        width: 324px;
+        height: 210px;
+    }
+
+    .main-container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .advantages-item {
@@ -359,6 +386,7 @@
 }
 
 @media screen and (max-width: 1050px) {
+
     #main-img {
         width: 580px;
         right: 14px;
@@ -622,6 +650,7 @@
 }
 
 @media screen and (max-width: 810px) {
+
     #flowers-question {
         display: none;
     }
@@ -657,10 +686,9 @@
     }
 
     #quote-img {
-        position: absolute;
-        bottom: 229px;
-        left: 84px;
-        width: 350px;
+        width: 100%;
+        position: static;
+        margin: 0 auto;
     }
 
     #quote-img img {
@@ -675,7 +703,6 @@
         width: 275px;
         padding: 0 0;
         margin: 0 auto;
-        border: 0;
     }
 
     .advantages-item {
@@ -687,6 +714,11 @@
         margin: 10px 0;
     }
 
+    .advantages-text {
+        height: 100%;
+        padding-bottom: 15px;
+    }
+
     #advantages-img {
         bottom: -17px;
         right: 220px;
@@ -695,6 +727,17 @@
 
     #advantages-img img {
         width: 100%;
+    }
+
+    #quote {
+        width: 99%;
+        padding: 40px 0 6px 0;
+    }
+
+    #quote-block {
+        width: 100%;
+        background: #f9f4f2;
+        padding-bottom: 10px;
     }
 }
 
@@ -786,40 +829,26 @@
         padding: 46px 0 11px 0;
     }
 
-    #quote-block {
-        width: 100%;
-        background: #f9f4f2;
-        padding-bottom: 10px;
-    }
-
-    #quote {
-        width: 99%;
-        padding: 40px 0 6px 0;
-    }
-
-    #quote-img {
-        width: 100%;
-        position: static;
-        margin: 0 auto;
-        text-align: center;
-    }
 
     #portfolio-block {
         margin-top: 130px;
     }
 
 }
+
 @media screen and (max-width: 600px) {
     #call-back-img {
         position: absolute;
         top: 80px;
-        right: 185px;
+        right: 169px;
         width: 130px;
     }
+
     #call-back-img img {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 530px) {
 
     .accordion {
@@ -878,7 +907,7 @@
 
     #stock-box {
         width: 282px;
-        right: -3px;
+        right: 2px;
         height: 531px;
         bottom: 129px;
     }
@@ -887,7 +916,7 @@
         display: block;
         position: absolute;
         top: -368px;
-        left: 21px;
+        left: 9px;
         width: 280px;
     }
 
@@ -899,12 +928,15 @@
     #review-block {
         width: 100%;
     }
+
     #review-container {
         width: 280px;
     }
+
     .review-brunch {
         padding-bottom: 12px;
     }
+
     .review-text {
         width: 250px;
         background: transparent;
@@ -987,87 +1019,196 @@
         bottom: -111px;
         left: 14px;
     }
+
     #stock-design-block {
         padding-left: 0;
         padding-right: 0;
     }
+
     #stock-design-container {
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         width: 260px;
     }
+
     #stock-design-box {
         width: 255px;
-        right: -11px;
+        right: -4px;
     }
+
     #stock-design-description {
         width: 219px;
     }
+
     #stock-design-note {
         width: 237px;
     }
+
     .advantages-title {
         width: 251px;
         margin: 20px auto 14px auto;
     }
+
     .about-text-item {
         width: 246px;
     }
+
     #review-heart {
         display: none;
     }
+
     .portfolio-gallery-container .portfolio-container-text {
         bottom: -111px;
         left: 14px;
     }
+
     #portfolio-hearts {
-        left: 19px;
+        left: 2px;
     }
 }
+
 @media screen and (max-width: 430px) {
+    #bokal {
+        left: 47px;
+        top: 121px;
+        opacity: 0.6;
+    }
+    #bells {
+    display: none;
+    }
+    #bells-adaptive {
+        display: block;
+        position: absolute;
+        right: 30px;
+        bottom: 80px;
+    }
+    .accordion {
+        width: 75%;
+        padding: 15px 0 0 0;
+        font-size: 17px;
+        line-height: 41px;
+        background: transparent;
+    }
+
+    #stock-img-butterflies1 {
+        display: block;
+        position: absolute;
+        top: -120px;
+        right: 15px;
+        z-index: -1;
+    }
+
+    #stock-img-butterflies2 {
+        display: block;
+        position: absolute;
+        top: -85px;
+        right: 40px;
+        z-index: -1;
+    }
+
+    #stock-img-butterflies3 {
+        display: block;
+        position: absolute;
+        top: -45px;
+        right: 2px;
+        z-index: -1;
+    }
+
+    #stock-women {
+        left: -55px;
+    }
+
+    #blog-block {
+        position: relative;
+    }
+
+    #review-block {
+        position: relative;
+    }
+
+    .arrows-adaptive {
+        display: block;
+        position: absolute;
+        top: 63px;
+        right: 30px;
+    }
+
+    #bant {
+        right: 2px;
+    }
+
+    #quote-img-adaptive {
+        display: block;
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #quote-img {
+        display: none;
+    }
+
+    #almaz {
+        left: 255px;
+        top: 50px;
+    }
+
     #footer .menu {
         flex-direction: column;
     }
+
     #footer .menu a {
         margin: 15px 0;
     }
+
     #footer .main-number {
         width: 61%
     }
+
     #footer .call-back-btn {
         width: 56%
     }
+
     .accordion::after {
         content: "+";
         top: 28px;
         right: -60px;
     }
+
     .accordion {
         width: 78%;
         padding: 15px 0 15px 0;
         font-size: 17px;
     }
+
     .accordion-content {
         max-height: 0;
         overflow: hidden;
         padding: 0;
         width: 258px;
     }
+
     .about-text-item:first-child {
         margin-bottom: 277px;
+        margin-left: 10px;
     }
+
     #about-img {
         top: 195px;
         margin-left: 15px;
     }
+
     #about-img-right {
         right: -19px;
     }
+
     #about-img-butterflies {
         right: -31px;
         top: -244px;
     }
+
     #call-back-title {
         font-family: Aquarelle, sans-serif;
         font-size: 30px;

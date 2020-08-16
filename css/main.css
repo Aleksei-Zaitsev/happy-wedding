@@ -1427,3 +1427,35 @@ h1, h2, h3, h4, h5, h6 {
 #about-img-right {
     display: none;
 }
+#quote-img-adaptive {
+    display: none;
+}
+.arrows-adaptive {
+    display: none;
+}
+#stock-img-butterflies {
+    display: none;
+}
+#bells-adaptive {
+    display: none;
+}
+.scroll-top {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    opacity: 0;
+    right: 15px;
+    z-index: 99;
+    transition: 0.4s;
+}
+.scroll-top svg:hover {
+    fill: #8A5C56;
+}
+.scroll-top svg{
+    transition: 0.2s;
+    fill: #C29892;
+}
+.active {
+    opacity: 1;
+    border-right: 30px;
+}

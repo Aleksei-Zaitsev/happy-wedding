@@ -309,5 +309,32 @@ $(document).ready(function () {
             arrInputs[x].next().css('color','transparent');
         })
     };
+    // КЛИК ПО КНОПКЕ "ОРГАНИЗОВАТЬ СВАДЬБУ"
+
+    $('#main-action button').click(function () {
+        $('html, body').animate({
+            scrollTop: $(".order-block").offset().top
+        }, 0);
+    });
+    let scrollTopBtnSvg =$('.scroll-top svg');
+
+
+    scrollTopBtnSvg.click(function () {
+        $('html, body').animate({
+            scrollTop: $(".header").offset().top
+        }, 0);
+    });
+    // Скролл наверх
+
+// When the user scrolls down 20px from the top of the document, show the button
+    let scrollTopBtn = document.querySelector(".scroll-top");
+
+  window.addEventListener("scroll", () => {
+      if (window.pageYOffset >100) {
+          scrollTopBtn.classList.add("active");
+      } else  {
+          scrollTopBtn.classList.remove("active");
+      }
+  })
 
 });

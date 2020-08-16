@@ -326,11 +326,10 @@ $(document).ready(function () {
     });
     // Скролл наверх
 
-// When the user scrolls down 20px from the top of the document, show the button
     let scrollTopBtn = document.querySelector(".scroll-top");
 
   window.addEventListener("scroll", () => {
-      if (window.pageYOffset >100) {
+      if (window.pageYOffset >400) {
           scrollTopBtn.classList.add("active");
       } else  {
           scrollTopBtn.classList.remove("active");

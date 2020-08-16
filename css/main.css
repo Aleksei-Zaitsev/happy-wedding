@@ -382,8 +382,14 @@ button {
 #services-container {
     padding-top: 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+
+@supports not (-ms-ime-align: auto) {
+    #services-container {
+        justify-content: space-evenly
+    }
 }
 
 .services-item {
@@ -1442,7 +1448,7 @@ h1, h2, h3, h4, h5, h6 {
 .scroll-top {
     display: block;
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     opacity: 0;
     right: 15px;
     z-index: 99;
@@ -1457,5 +1463,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .active {
     opacity: 1;
-    border-right: 30px;
+    bottom: 20px;
+}
+#stock-img-butterflies1 {
+    display: none;
+}
+#stock-img-butterflies2 {
+    display: none;
+}
+#stock-img-butterflies3 {
+    display: none;
 }

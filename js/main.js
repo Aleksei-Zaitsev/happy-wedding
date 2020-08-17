@@ -163,6 +163,14 @@ $(document).ready(function () {
             adaptivBlock.css('display', 'none');
         }
     });
+    // Маска для Инпутов
+
+
+    $("#client-phone").mask("+7 (999) 999-99-99");
+    $(".call-back-phone").mask("+7 (999) 999-99-99");
+    $("#client-marry-date").mask("99.99.9999");
+
+
 
     //попап обратного звонка
 
@@ -187,7 +195,7 @@ $(document).ready(function () {
         if (nameCall.val() && phoneCall.val()) {
             $.ajax({
                 type: 'post',
-                url: 'mail-call.php',
+                url: 'mail-call-back.php',
                 data: 'nameCall=' + nameCall.val() + '&phoneCall=' + phoneCall.val(),
                 success: () => {
                     alert('заявка отправлена')

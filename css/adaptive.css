@@ -952,6 +952,12 @@
 
 @media screen and (max-width: 530px) {
 
+    .arrows-adaptive {
+        display: block;
+        position: absolute;
+        top: 63px;
+        right: 91px;
+    }
     .accordion {
         width: 75%;
         padding: 15px 0 0 0;
@@ -1098,14 +1104,14 @@
     }
 
     #portfolio-container {
-        width: 280px;
+        width: 300px;
     }
 
     .portfolio-container-text {
         background: #F9F4F2;
         position: absolute;
         bottom: 20px;
-        width: 241px;
+        width: 261px;
     }
 
     #about-img-right {

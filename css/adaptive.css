@@ -592,7 +592,7 @@
     }
 
     .blog-item {
-        margin: 5px 40px;
+        margin: 20px 20px;
         width: 350px;
     }
 
@@ -1143,16 +1143,24 @@
     }
 
     #bokal {
-        left: 0px;
+        left: 0;
     }
-
+    #blog-block {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #blog-container {
+        padding-top: 45px;
+        width: 310px;
+    }
     .blog-item {
-        margin: 5px 40px;
-        width: 290px;
+        margin: 15px 10px;
     }
-
+    #blog-container .slick-next {
+        right: 0;
+    }
     .blog-img {
-        width: 290px;
+        width: 100%;
     }
 
     .blog-img img {
@@ -1169,10 +1177,6 @@
         width: 270px;
     }
 
-    #blog-container {
-        padding-top: 45px;
-        width: 290px;
-    }
 
     #portfolio-container {
         width: 300px;
@@ -1555,8 +1559,4 @@
         width: 260px;
     }
 
-    .blog-item {
-        margin: 5px 0;
-        width: 290px;
-    }
 }

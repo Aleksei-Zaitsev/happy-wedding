@@ -2,11 +2,10 @@ $(document).ready(function () {
     let portImgCont = $('#portfolio-container');
     //карусели
     portImgCont.slick({
-        variableWidth: true,
-        centerMode: false,
+        infinite: false,
+        speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: true,
         responsive: [
             {
                 breakpoint: 1201,
@@ -21,36 +20,39 @@ $(document).ready(function () {
     });
 
     $('#blog-container').slick({
-        variableWidth: true,
-        centerMode: true,
-        infinite: true,
+        infinite: false,
         speed: 300,
         arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
+            // {
+            //     breakpoint: 1201,
+            //     settings: {
+            //         variableWidth: true,
+            //
+            //         centerPadding: "0px",
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //         arrows: true,
+            //     }
+            // },
+            // {
+            //     breakpoint: 851,
+            //     settings: {
+            //         variableWidth: true,
+            //
+            //         centerPadding: "0px",
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1,
+            //         arrows: true,
+            //     }
+            // },
             {
-                breakpoint: 1201,
+                breakpoint: 530,
                 settings: {
-                    variableWidth: false,
-                    centerPadding: "0px",
-                    slidesToShow: 2,
-                    arrows: true,
-                }
-            },
-            {
-                breakpoint: 851,
-                settings: {
-                    variableWidth: true,
-                    centerPadding: "0px",
+                    infinite: true,
                     slidesToShow: 1,
-                    arrows: true,
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    arrows: false,
                 }
             }
         ]
@@ -63,7 +65,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         responsive: [
             {
-                breakpoint: 400,
+                breakpoint: 530,
                 settings: {
                     arrows: false,
                 }
@@ -91,6 +93,7 @@ $(document).ready(function () {
             {
                 breakpoint: 861,
                 settings: {
+                    centralMode: true,
                     variableWidth: true,
                     centerPadding: "0px",
                     slidesToShow: 1,
@@ -171,7 +174,76 @@ $(document).ready(function () {
     $("#client-marry-date").mask("99.99.9999");
 
 
+    $("#client-phone-popup").mask("+7 (999) 999-99-99");
+    $("#client-marry-date-popup").mask("99.99.9999");
 
+
+    // Попап заявка
+    let orderPopapBlock = $('#order-popup-block')
+    let orderPopupBtn = $('.order-popup-btn');
+    orderPopupBtn.click(function () {
+        orderPopapBlock.css('display', 'flex');
+    });
+    $('#order-popup-close-cancel, #order-popup-block').click((e) => {
+        if (e.target.id === 'order-popup-close-cancel' || e.target.id === 'order-popup-block') {
+            orderPopapBlock.css('display', 'none');
+        }
+    });
+    let namePop = $('#client-name-popup');
+    let surnamePop = $('#client-surname-popup');
+    let fathersNamePop = $('#client-fathers-name-popup');
+    let phonePop = $('#client-phone-popup');
+    let eMailPop = $('#client-e-mail-popup');
+    let marryDatePop = $('#client-marry-date-popup');
+
+    var arrInputsPop = [namePop, surnamePop, fathersNamePop, phonePop, eMailPop, marryDatePop];
+
+    $('.order-main-btn-popup').click(function () {
+
+
+        if (namePop.val() && surnamePop.val() && fathersNamePop.val() && phonePop.val() && eMailPop.val() && marryDatePop.val()) {
+            $.ajax({
+                type: 'post',
+                url: 'mail.php',
+                data: 'namePop=' + namePop.val() + '&surnamePop=' + surnamePop.val()
+                    + '&fathersNamePop=' + fathersNamePop.val() + '&phonePop=' + phonePop.val()
+                    + '&eMailPop=' + eMailPop.val() + '&marryDatePop=' + marryDatePop.val(),
+                success: () => {
+                    alert('заявка отправлена')
+                },
+                error: () => {
+                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                }
+            })
+            for (let i = 0; i < 6; i++) {
+                arrInputsPop[i].css('borderColor', '#C29892');
+                arrInputsPop[i].next().css('color','none');
+            }
+
+        } else {
+            for (let i = 0; i < 6; i++) {
+                if (!arrInputsPop[i].val()) {
+                    arrInputsPop[i].css('borderColor', '#E5467E');
+                    arrInputsPop[i].next().css('color','#E5467E');
+                }
+                if (arrInputsPop[i].val()) {
+                    arrInputsPop[i].css('borderColor', '#C29892');
+                    arrInputsPop[i].next().css('color','transparent');
+                }
+            }
+        }
+
+    });
+    for ( let x = 0; x < 6; x++) {
+        arrInputsPop[x].blur(function () {
+                arrInputsPop[x].css('borderColor', '#C29892');
+                arrInputsPop[x].next().css('color','transparent');
+        })
+        arrInputsPop[x].focus( function () {
+            arrInputsPop[x].css('borderColor', '#EFDFD8');
+            arrInputsPop[x].next().css('color','transparent');
+        })
+    };
     //попап обратного звонка
 
 
@@ -225,13 +297,8 @@ $(document).ready(function () {
     });
     for ( let x = 0; x < 2; x++) {
         arrInputsCall[x].blur(function () {
-            if (!arrInputsCall[x].val()) {
-                arrInputsCall[x].css('borderColor', '#E5467E');
-                arrInputsCall[x].next().css('color','#E5467E');
-            } else {
                 arrInputsCall[x].css('borderColor', '#C29892');
                 arrInputsCall[x].next().css('color','transparent');
-            }
         })
         arrInputsCall[x].focus( function () {
             arrInputsCall[x].css('borderColor', '#EFDFD8');
@@ -304,13 +371,8 @@ $(document).ready(function () {
     });
     for ( let x = 0; x < 6; x++) {
         arrInputs[x].blur(function () {
-            if (!arrInputs[x].val()) {
-                arrInputs[x].css('borderColor', '#E5467E');
-                arrInputs[x].next().css('color','#E5467E');
-            } else {
                 arrInputs[x].css('borderColor', '#C29892');
                 arrInputs[x].next().css('color','transparent');
-            }
         })
         arrInputs[x].focus( function () {
             arrInputs[x].css('borderColor', '#EFDFD8');
@@ -337,7 +399,7 @@ $(document).ready(function () {
     let scrollTopBtn = document.querySelector(".scroll-top");
 
   window.addEventListener("scroll", () => {
-      if (window.pageYOffset >400) {
+      if (window.pageYOffset >2300) {
           scrollTopBtn.classList.add("active");
       } else  {
           scrollTopBtn.classList.remove("active");

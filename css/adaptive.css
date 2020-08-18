@@ -553,6 +553,20 @@
 }
 
 @media screen and (max-width: 850px) {
+    #stock-women {
+        display: none;
+    }
+    #stock-woman-adaptive {
+        display: block;
+        position: absolute;
+        bottom: 65px;
+        left: -10px;
+        z-index: 2;
+        width: 150px;
+    }
+    #stock-woman-adaptive img {
+        width: 100%;
+    }
     #blog-container {
         padding-top: 45px;
         width: 400px;
@@ -951,7 +965,16 @@
 }
 
 @media screen and (max-width: 530px) {
+    .slick-next, .slick-prev {
+        display: none;
 
+    }
+    .slick-next {
+        right: 0;
+    }
+    .slick-prev {
+        left: 0;
+    }
     .arrows-adaptive {
         display: block;
         position: absolute;
@@ -980,28 +1003,36 @@
     }
 
     #stock-block {
-        width: 290px;
+        padding-left: 11px;
+        padding-right: 11px;
+        max-width: 300px;
+        padding-top: 50px;
     }
 
     #stock-img {
         display: none;
     }
+    #stock-img-adaptive {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 
     #stock-container {
-        width: 258px;
+        box-shadow: 0 2px 15px rgba(55, 14, 29, 0.05);
+        border-radius: 5px;
+        width: 280px;
         overflow: hidden;
-        background: url("../images/stock-face-adaptive.png");
-        background-size: cover;
     }
 
     .slick-next:before, .slick-prev:before {
-        display: none;
+        display: none !important;
     }
-
 
     #stock-text {
         padding-left: 0;
-        width: 233px;
+        width: 280px;
         background: transparent;
         padding-bottom: 3px;
     }
@@ -1009,26 +1040,29 @@
     #stock-title {
         margin: 0 auto;
         width: 105px;
-        padding-top: 246px;
+        padding-top: 256px;
+    }
+    #stock-description {
+        width: 100%;
     }
 
     #stock-box {
-        width: 282px;
-        right: 2px;
-        height: 531px;
+        width: 270px;
+        right: 0;
+        height: 495px;
         bottom: 129px;
     }
 
     #main-img-adaptive {
         display: block;
         position: absolute;
-        top: -368px;
+        top: -347px;
         left: 9px;
         width: 280px;
     }
 
     #main-text {
-        width: 254px;
+        width: 280px;
         margin: 215px auto 30px auto;
     }
 
@@ -1187,6 +1221,9 @@
     #portfolio-hearts {
         left: 2px;
     }
+    .footer .call-back-btn {
+        width: 64%;
+    }
 }
 @media screen and (max-width: 450px) {
     .article-text {
@@ -1241,7 +1278,7 @@
 }
 @media screen and (max-width: 430px) {
     #bokal {
-        left: 47px;
+        left: 70px;
         top: 121px;
         opacity: 0.6;
     }

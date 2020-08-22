@@ -1697,6 +1697,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-block {
     display: none;
+    position: relative;
 }
 .blog-container  {
     width: 768px;
@@ -1707,4 +1708,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #review-block {
     overflow-x: hidden;
+}
+.blog-block #almaz-blog {
+    position: absolute;
+    top: 191px;
+    left: 0;
 }

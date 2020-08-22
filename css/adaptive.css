@@ -122,6 +122,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+    #blog-block #almaz-blog {
+        position: absolute;
+        top: 53px;
+        left: 0;
+    }
     .header-article-block {
         overflow: hidden;
     }
@@ -1005,7 +1010,22 @@
     }
 }
 @media screen and (max-width: 767px) {
-
+    #call-back-img {
+        position: absolute;
+        top: 341px;
+        bottom: 22px;
+        right:174px;
+        width: 130px;
+    }
+    #call-back-img img {
+        width: 100%;
+    }
+    #blog-block #almaz-blog {
+     display: none;
+    }
+    .blog-block #almaz-blog {
+     display: none;
+    }
     .main-container {
         width: 290px;
         margin: 0 auto;
@@ -1880,19 +1900,13 @@
 
     #call-back-container {
         width: 290px;
+        overflow-x: hidden;
     }
 
     #call-back-title {
         margin: 40px 0;
         font-size: 36px;
         text-align: center;
-    }
-
-    #call-back-img {
-        position: absolute;
-        top: 115px;
-        right: 155px;
-        width: 130px;
     }
 
     #call-back-container .order-input {
@@ -2051,16 +2065,8 @@
 
 
 @media screen and (max-width: 600px) {
-    #call-back-img {
-        position: absolute;
-        top: 80px;
-        right: 169px;
-        width: 130px;
-    }
 
-    #call-back-img img {
-        width: 100%;
-    }
+
 }
 
 @media screen and (max-width: 530px) {
@@ -2569,14 +2575,6 @@
         font-size: 36px;
         text-align: center;
     }
-
-    #call-back-img {
-        position: absolute;
-        top: 115px;
-        right: 155px;
-        width: 130px;
-    }
-
     #call-back-container .order-input {
         margin: 0 auto 40px auto;
         text-align: center;

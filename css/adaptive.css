@@ -919,7 +919,10 @@
         padding-left: 0;
         padding-right: 0;
     }
-
+    .blog-link a {
+        padding-top: 466px;
+        padding-right: 95px;
+    }
 
 }
 
@@ -1008,6 +1011,7 @@
     }
 }
 @media screen and (max-width: 767px) {
+
     #about-block {
         padding-top: 10px;
     }

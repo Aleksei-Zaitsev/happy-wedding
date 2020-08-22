@@ -10,10 +10,21 @@ $(document).ready(function () {
             {
                 breakpoint: 1201,
                 settings: {
-                    variableWidth: false,
+                    variableWidth: true,
+                    centralMode: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: true
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    variableWidth: false,
+                    centralMode: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
         ]
@@ -49,9 +60,39 @@ $(document).ready(function () {
             //     }
             // },
             {
-                breakpoint: 530,
+                breakpoint: 1199,
                 settings: {
-                    infinite: true,
+                    infinite: false,
+                    variableWidth: true,
+                    speed: 300,
+                    arrows: false,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    variableWidth: true,
+                    centralMode: true,
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
+    $('.blog-container').slick({
+        infinite: false,
+        variableWidth: true,
+        speed: 300,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    variableWidth: true,
+                    centralMode: true,
                     slidesToShow: 1,
                 }
             }
@@ -60,12 +101,12 @@ $(document).ready(function () {
     $('#review-container').slick({
         variableWidth: true,
         centerMode: true,
-        infinite: true,
+        infinite: false,
         arrows: true,
         slidesToShow: 1,
         responsive: [
             {
-                breakpoint: 530,
+                breakpoint: 1199,
                 settings: {
                     arrows: false,
                 }
@@ -74,34 +115,37 @@ $(document).ready(function () {
     });
     let portGalSlick = $('.portfolio-gallery');
     portGalSlick.slick({
-        variableWidth: true,
-        centerMode: true,
-        infinite: true,
+        infinite: false,
+        speed: 300,
         arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1201,
+                breakpoint: 1199,
                 settings: {
-                    variableWidth: false,
-                    centerPadding: "0px",
+                    variableWidth: true,
+                    centralMode: true,
                     slidesToShow: 2,
-                    arrows: true,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    infinite: false
                 }
             },
             {
-                breakpoint: 861,
+                breakpoint: 767,
                 settings: {
                     centralMode: true,
                     variableWidth: true,
                     centerPadding: "0px",
                     slidesToShow: 1,
-                    arrows: true,
+
                 }
             }
         ]
     });
+
+
 
     //Галлерея портфолио
 

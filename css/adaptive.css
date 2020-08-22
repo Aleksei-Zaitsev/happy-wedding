@@ -603,10 +603,6 @@
         padding-right: 0;
     }
 
-    .blog-item:nth-child(1) {
-        margin-left: 50px;
-    }
-
     .div-adaptive-d2 {
         display: block !important;
     }
@@ -1124,6 +1120,7 @@
     }
 
     #blog-block {
+        width: 320px;
         padding-left: 15px;
 
     }
@@ -1232,9 +1229,9 @@
 
     #blog-container {
         padding-top: 45px;
-        width: 320px;
+        width: 310px;
         margin: 0 auto;
-        padding-left: 0;
+        padding-left: 7px;
     }
 
     .blog-item {

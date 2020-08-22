@@ -1,22 +1,22 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $name = $_POST['name'];
-    $surname = $_POST['surname'];
-    $fathersName = $_POST['$fathersName'];
-    $phone = $_POST['phone'];
-    $eMail = $_POST['eMail'];
-    $marryDate = $_POST['marryDate'];
+    $namePop = $_POST['namePop'];
+    $surnamePop = $_POST['surnamePop'];
+    $fathersNamePop = $_POST['$fathersNamePop'];
+    $phonePop = $_POST['phonePop'];
+    $eMailPop = $_POST['eMailPop'];
+    $marryDatePop = $_POST['marryDatePop'];
 
     $content = "<html>
     <body>
         <h1 style='color: #1a53a8; text-align: center; font-size: 30px; font-family: sans-serif;'>Заявка</h1>
-        <p style='font-size: 23px; font-family: sans-serif;'>$name</p>
-        <p style='font-size: 23px; font-family: sans-serif;'>$surname</p>
-        <p  style='font-size: 23px; font-family: sans-serif;'>$fathersName</p>
-        <p style='font-size: 23px; font-family: sans-serif;'>$phone</p>
-        <p style='font-size: 23px; font-family: sans-serif;'>$eMail</p>
-        <p style='font-size: 23px; font-family: sans-serif;'>$marryDate</p>
+        <p style='font-size: 23px; font-family: sans-serif;'>$namePop</p>
+        <p style='font-size: 23px; font-family: sans-serif;'>$surnamePop</p>
+        <p  style='font-size: 23px; font-family: sans-serif;'>$fathersNamePop</p>
+        <p style='font-size: 23px; font-family: sans-serif;'>$phonePop</p>
+        <p style='font-size: 23px; font-family: sans-serif;'>$eMailPop</p>
+        <p style='font-size: 23px; font-family: sans-serif;'>$marryDatePop</p>
     </body>
     </html>
     ";

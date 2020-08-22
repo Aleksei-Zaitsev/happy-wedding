@@ -220,6 +220,15 @@ $(document).ready(function () {
 
     $("#client-phone-popup").mask("+7 (999) 999-99-99");
     $("#client-marry-date-popup").mask("99.99.9999");
+    // Попап спасибо
+
+    let thanksBlock = $('#thanks-block');
+
+    $('#thanks-close-cancel, #thanks-block').click((e) => {
+        if (e.target.id === 'thanks-close-cancel' || e.target.id === 'thanks-block') {
+            thanksBlock.css('display', 'none');
+        }
+    });
 
 
     // Попап заявка
@@ -254,9 +263,14 @@ $(document).ready(function () {
                     + '&eMailPop=' + eMailPop.val() + '&marryDatePop=' + marryDatePop.val(),
                 success: () => {
                     alert('заявка отправлена')
+                    // ТЕCТ
+                    thanksBlock.css('display', 'flex');
+                    orderPopapBlock.css('display', 'none');
                 },
                 error: () => {
                     alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                    // ТЕCТ
+                    thanksBlock.css('display', 'flex');
                 }
             })
             for (let i = 0; i < 6; i++) {
@@ -315,9 +329,14 @@ $(document).ready(function () {
                 data: 'nameCall=' + nameCall.val() + '&phoneCall=' + phoneCall.val(),
                 success: () => {
                     alert('заявка отправлена')
+                    // ТЕCТ
+                    thanksBlock.css('display', 'flex');
+                    callBackBlock.css('display', 'none');
                 },
                 error: () => {
                     alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                    // ТЕCТ
+                    thanksBlock.css('display', 'flex');
                 }
             })
             for (let i = 0; i < 2; i++) {
@@ -389,9 +408,13 @@ $(document).ready(function () {
                     + '&eMail=' + eMail.val() + '&date=' + marryDate.val(),
                 success: () => {
                     alert('заявка отправлена')
+                    // ТЕCТ
+                    thanksBlock.css('display', 'flex');
                 },
                 error: () => {
                     alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                    // ТЕCТ
+                    thanksBlock.css('display', 'flex');
                 }
             })
             for (let i = 0; i < 6; i++) {

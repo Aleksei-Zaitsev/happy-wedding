@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-    $success = mail('LogisticsPlanet1@mail.ru' , 'Запрос на обратный звонок', $content, $headers);
+    $success = mail('Aleksei.Zaitsev.V@yandex.ru' , 'Запрос на обратный звонок', $content, $headers);
 
     if ($success) {
         http_response_code(200);
